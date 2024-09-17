@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    </head>
+    <body>
+        <div style="display: inline-block; padding: 5%;">
+            <a href="{% url 'home'%}">home</a> <a href="{% url 'add_contact' %}">add contact</a>  
+            <a href="{% url 'update_contact' %}">update contact</a> <a href="{% url 'delete_contact' %}">delete contact</a> 
+            <a href="{% url 'home'%}">others</a>
+        </div>
+        {%block content%}
+        {% endblock %}
+    </body>
+</html>

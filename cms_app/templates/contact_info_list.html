@@ -1,0 +1,14 @@
+{% extends  'navbar.html' %}
+
+{%block  contents%}
+  
+<h1>contacts</h1>
+<ul>
+    {% for contact in contacts %}
+    <li>
+        <a >{{ contact.first_name }}</a> - {{ contact.email }} - {{ contact.phone_number }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock%}
